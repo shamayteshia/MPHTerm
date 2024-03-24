@@ -88,8 +88,8 @@ public class MPHTerminalAssessment {
             System.out.print("Enter Employee ID: ");
             String lookup = scan.nextLine();
             
-            //This should be change depends on where the file locate
-           try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\teshia\\Downloads\\MotorPH Employee Datav4.txt1"))) {
+            //This should be changed depending on where the file is located
+           try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\teshia\\Downloads\\MotorPH Employee Datav4.txt"))) {
                 String str;
                 boolean found = false;
                 
@@ -136,7 +136,7 @@ public class MPHTerminalAssessment {
     /**
  * This method calculates the gross weekly salary for an employee based on the hourly rate,
  * hours worked, and additional benefits such as rice subsidy, clothing allowance, and phone allowance.
- * It prompts the user to enter an employee ID and retrieves the corresponding data from a CSV file.
+ * It prompts the user to enter an employee ID and retrieves the corresponding data from a text file.
  * It then calculates the gross weekly salary using the hourly rate, hours worked, and benefits,
  * and displays the result with proper formatting.
  * If the employee ID is not found after the maximum attempts, it exits the method.
